@@ -6,7 +6,7 @@ node {
 	}
 
 	stage('Build image') {
-		app = docker.build(hubbaduck/dkr-jnks-course)
+		app = docker.build('hubbaduck/dkr-jnks-course')
 	}
 
 	stage('Push image') {
